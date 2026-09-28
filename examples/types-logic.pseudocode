@@ -1,0 +1,11 @@
+CONSTANT Rate ← 6.50
+DECLARE Hours : REAL
+DECLARE Total : REAL
+DECLARE Grade : CHAR
+DECLARE Passed : BOOLEAN
+Hours ← 4.0
+Total ← Rate * Hours
+Grade ← 'A'
+Passed ← Total >= 20.0 AND NOT Grade = 'F'
+OUTPUT "Total: ", Total
+OUTPUT "Grade: ", Grade, "; passed: ", Passed

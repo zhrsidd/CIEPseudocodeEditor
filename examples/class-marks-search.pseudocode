@@ -1,0 +1,23 @@
+DECLARE Marks : ARRAY[1:5] OF INTEGER
+DECLARE Index : INTEGER
+DECLARE Target : INTEGER
+DECLARE Found : BOOLEAN
+Marks[1] ← 67
+Marks[2] ← 82
+Marks[3] ← 91
+Marks[4] ← 74
+Marks[5] ← 88
+OUTPUT "Which mark are you looking for?"
+INPUT Target
+Found ← FALSE
+FOR Index ← 1 TO 5
+    IF Marks[Index] = Target
+      THEN
+        OUTPUT "Found at position ", Index
+        Found ← TRUE
+    ENDIF
+NEXT Index
+IF NOT Found
+  THEN
+    OUTPUT "Mark not found"
+ENDIF

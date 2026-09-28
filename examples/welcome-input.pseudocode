@@ -1,0 +1,15 @@
+// Your first Cambridge pseudocode program
+DECLARE Name : STRING
+DECLARE Age : INTEGER
+
+OUTPUT "What is your name?"
+INPUT Name
+OUTPUT "How old are you?"
+INPUT Age
+
+IF Age >= 16
+  THEN
+    OUTPUT "Hello, ", Name, ". Ready for your next chapter!"
+  ELSE
+    OUTPUT "Hello, ", Name, ". Keep exploring!"
+ENDIF

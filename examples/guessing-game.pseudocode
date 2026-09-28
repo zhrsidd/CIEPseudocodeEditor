@@ -1,0 +1,16 @@
+DECLARE Secret : REAL
+DECLARE Guess : INTEGER
+Secret ← ROUND(RANDOM() * 9.0, 0) + 1.0
+OUTPUT "Guess the number from 1 to 10"
+REPEAT
+    INPUT Guess
+    IF Guess < Secret
+      THEN
+        OUTPUT "Try higher"
+    ENDIF
+    IF Guess > Secret
+      THEN
+        OUTPUT "Try lower"
+    ENDIF
+UNTIL Guess = Secret
+OUTPUT "Correct!"

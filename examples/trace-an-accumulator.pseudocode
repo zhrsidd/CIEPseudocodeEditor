@@ -1,0 +1,8 @@
+// Select Counter and Total in the Trace table panel
+DECLARE Counter : INTEGER
+DECLARE Total : INTEGER
+Total ← 0
+FOR Counter ← 1 TO 4
+    Total ← Total + Counter
+NEXT Counter
+OUTPUT "Total: ", Total

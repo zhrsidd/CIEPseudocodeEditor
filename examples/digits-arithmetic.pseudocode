@@ -1,0 +1,10 @@
+DECLARE Number : INTEGER
+DECLARE Digit : INTEGER
+CONSTANT Base ← 10
+Number ← 472
+WHILE Number > 0 DO
+    Digit ← MOD(Number, Base)
+    OUTPUT Digit
+    Number ← DIV(Number, Base)
+ENDWHILE
+OUTPUT "2 to the power of 3 = ", 2 ^ 3

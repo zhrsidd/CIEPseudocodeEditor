@@ -1,0 +1,14 @@
+DECLARE Move : CHAR
+DECLARE Position : INTEGER
+Position ← 50
+OUTPUT "Choose W, E, A or D"
+INPUT Move
+Move ← UCASE(Move)
+CASE OF Move
+    'W' : Position ← Position - 10
+    'E' : Position ← Position + 10
+    'A' : Position ← Position - 1
+    'D' : Position ← Position + 1
+    OTHERWISE OUTPUT "Invalid move"
+ENDCASE
+OUTPUT "Position: ", Position

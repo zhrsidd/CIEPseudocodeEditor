@@ -1,0 +1,15 @@
+FUNCTION Grade(Mark : INTEGER) RETURNS STRING
+    IF Mark >= 80
+      THEN
+        RETURN "Excellent"
+      ELSE
+        RETURN "Keep practising"
+    ENDIF
+ENDFUNCTION
+
+PROCEDURE Report(Name : STRING, Mark : INTEGER)
+    OUTPUT Name, ": ", Grade(Mark)
+ENDPROCEDURE
+
+CALL Report("Ada", 91)
+CALL Report("Ali", 74)

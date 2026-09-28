@@ -1,0 +1,8 @@
+// Inclusive count-controlled loop
+DECLARE Number : INTEGER
+DECLARE Counter : INTEGER
+OUTPUT "Which times table?"
+INPUT Number
+FOR Counter ← 1 TO 12
+    OUTPUT Number, " × ", Counter, " = ", Number * Counter
+NEXT Counter

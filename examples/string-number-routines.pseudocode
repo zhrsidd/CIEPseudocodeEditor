@@ -1,0 +1,12 @@
+DECLARE Text : STRING
+DECLARE Letter : CHAR
+DECLARE Value : REAL
+Text ← "Happy Days"
+Letter ← 'w'
+OUTPUT "Length: ", LENGTH(Text)
+OUTPUT "First word: ", SUBSTRING(Text, 1, 5)
+OUTPUT LCASE(Text), " / ", UCASE(Letter)
+Value ← ROUND(3.14159, 2)
+OUTPUT "Rounded: ", Value
+Value ← RANDOM()
+OUTPUT "Random value (0 to 1): ", Value

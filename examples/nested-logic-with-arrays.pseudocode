@@ -1,0 +1,16 @@
+DECLARE Marks : ARRAY[1:4] OF INTEGER
+DECLARE Index : INTEGER
+DECLARE Passed : INTEGER
+Marks[1] ← 45
+Marks[2] ← 72
+Marks[3] ← 88
+Marks[4] ← 39
+Passed ← 0
+FOR Index ← 1 TO 4
+    IF Marks[Index] >= 50
+      THEN
+        Passed ← Passed + 1
+        OUTPUT "Student ", Index, " passed"
+    ENDIF
+NEXT Index
+OUTPUT "Pass count: ", Passed

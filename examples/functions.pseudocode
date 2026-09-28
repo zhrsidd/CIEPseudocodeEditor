@@ -1,0 +1,6 @@
+FUNCTION SumSquare(Number1 : INTEGER, Number2 : INTEGER) RETURNS INTEGER
+    RETURN Number1 * Number1 + Number2 * Number2
+ENDFUNCTION
+
+OUTPUT "Sum of squares: ", SumSquare(10, 20)
+OUTPUT "In an expression: ", SumSquare(3, 4) + 1

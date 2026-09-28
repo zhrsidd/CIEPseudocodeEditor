@@ -1,0 +1,14 @@
+PROCEDURE DisplayMessage(Message : STRING)
+    OUTPUT Message
+ENDPROCEDURE
+
+PROCEDURE AddOne(Number : INTEGER)
+    Number ← Number + 1
+    OUTPUT "Inside procedure: ", Number
+ENDPROCEDURE
+
+DECLARE Number : INTEGER
+Number ← 7
+CALL DisplayMessage("Parameters are passed by value")
+CALL AddOne(Number)
+OUTPUT "Outside procedure: ", Number
